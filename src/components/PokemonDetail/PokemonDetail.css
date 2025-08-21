@@ -1,0 +1,138 @@
+.pokemon-detail{
+     display: flex;
+     flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     background-color: gainsboro;
+     width:330px;
+     margin: 0px auto ;
+     padding-bottom: 10px;
+     border-radius: 4px;
+     border:1px solid brown;
+     
+     
+}
+.pokemon-heading-detail{
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgb(71, 70, 70);
+ 
+}
+
+
+.pokemon-heading-detail::first-letter{
+    text-transform: capitalize;
+    color: brown;
+    font-size: larger;
+}
+.pokemon-height-detail{
+ text-align: center;
+}
+.pokemon-weight-detail{
+  text-align: center;
+}
+
+.pokemon-id-detial,.pokemon-height-detial,.pokemon-weight-detial{
+   text-align: center; 
+   font-weight: bolder; 
+margin: 3px 0;
+height: 20px;
+min-width: 60px;
+background-color: rgb(167, 158, 158);
+border: 1px solid black;
+padding:0.5rem 2rem;
+
+}
+.animation-id{
+  animation:move1 2s ease-in 100ms infinite alternate;
+}
+.animation-height{
+  animation:move2 2s ease-in 100ms infinite alternate;
+}
+.animation-width{
+  animation:move3 2s ease-in 100ms infinite alternate;
+}
+
+.pokemon-detail>p:nth-of-type(2){
+  min-width: 100px;
+}
+.pokemon-detail>p:nth-of-type(3){
+  min-width: 140px;
+}
+.pokemon-id-detial:hover,.pokemon-height-detial:hover,.pokemon-weight-detial:hover{
+   background-color: rgb(199, 196, 196);
+}
+.pokemon-img-detail{
+ height: 190px;
+ width: 240px;
+ border: 1px solid rgb(106, 17, 17);
+ margin-bottom: 30px;
+ background-color: rgb(248, 88, 88);
+ padding: 20px;
+
+}
+
+
+.back{
+height: 40px;
+width:100px;
+margin-top: 50px;
+ background-color: rgb(194, 53, 53);
+  border: 1px solid rgb(106, 17, 17);
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: medium;
+  transition: background-color 2s ease, width  ease;
+}
+.back:hover{
+  background-color: blueviolet;
+  width: 180px;
+  transform: scaleX(1.1);
+}
+
+@keyframes move1 {
+  0%{
+    transform: translateX(-75px);
+        background-color:rgb(167, 158, 158);
+  }
+  50%{
+        background-color:#58A0C8;
+        color:red;
+        font-size: larger;
+  }
+  100%{
+    transform: translateX(75px);
+       background-color:rgb(167, 158, 158);
+  }
+} 
+@keyframes move2 {
+  0%{
+    transform: translateX(-55px);
+    background-color:rgb(167, 158, 158);
+  }
+  50%{
+       background-color:#34699A;
+         color:red;
+        font-size: larger;
+  }
+  100%{
+    transform: translateX(55px);
+       background-color:rgb(167, 158, 158);
+  }
+} 
+@keyframes move3 {
+  0%{
+    transform: translateX(-35px);
+         background-color:rgb(167, 158, 158);
+  }
+  50%{
+      background-color:#113F67;
+        color:red;
+        font-size: larger;
+        
+  }
+  100%{
+    transform: translateX(35px);
+        background-color:rgb(167, 158, 158);
+  }
+} 
